@@ -38,6 +38,11 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
+# 参考
+- https://zenn.dev/nbr41to/articles/276f40041ad9fe
+- https://yoheiko.com/blog/tailwind-cssの設定と実装方法-jitも解説/
+- https://zenn.dev/ixkaito/articles/advanced-tailwindcss
+
 # その他
 - yarn create next-app .
 - yarn add -D tailwindcss postcss autoprefixer
