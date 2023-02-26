@@ -44,3 +44,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - npx tailwindcss init -p
   - postcss.config.jsとtailwind.config.jsが作成される
 - https://tailwindcss.com/docs/installation
+- yarn add react-syntax-highlighter
+- yarn add --dev @types/react-syntax-highlighter
+- https://github.com/react-syntax-highlighter/react-syntax-highlighter/blob/master/AVAILABLE_LANGUAGES_HLJS.MD
+- yarn add tailwind-scrollbar-hide

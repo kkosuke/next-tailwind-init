@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import { TextLink } from "@/components/dl/TextLink";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,26 +14,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="mx-auto max-w-[1024px] min-h-full">
-        <main>
+        <header className="fixed top-0 left-0 h-[50px] bg-orange-500 text-white text-center w-full flex items-center justify-center">
+          <span>
+            参考：
+            <TextLink href="https://zenn.dev/nbr41to/articles/276f40041ad9fe" />
+          </span>
+          <span className="ml-8">
+            <Link
+              href={`/step2`}
+              className="text-white underline hover:no-underline"
+            >
+              進む
+            </Link>
+          </span>
+        </header>
+        <main className="pt-[50px]">
           <dl>
             <dt className="text-lg mt-4 font-bold">参考</dt>
             <dd className="mt-2">
-              <Link
-                href="https://zenn.dev/nbr41to/articles/276f40041ad9fe"
-                target="_blank"
-                className="text-blue-500 underline hover:text-blue-300 hover:no-underline"
-              >
-                https://zenn.dev/nbr41to/articles/276f40041ad9fe
-              </Link>
+              <TextLink href="https://zenn.dev/nbr41to/articles/276f40041ad9fe" />
             </dd>
             <dd className="mt-2">
-              <Link
-                href="https://proglab.nbr41.com/"
-                target="_blank"
-                className="text-blue-500 underline hover:text-blue-300 hover:no-underline"
-              >
-                https://proglab.nbr41.com/
-              </Link>
+              <TextLink href="https://proglab.nbr41.com/" />
             </dd>
 
             <dt className="text-lg mt-4 font-bold">Wrapper</dt>
@@ -112,13 +115,7 @@ export default function Home() {
             <dt className="text-lg mt-4 font-bold">font-size（fz）</dt>
             <dd className="bg-gray-100">text-[サイズ]</dd>
             <dd>
-              <Link
-                href="https://tailwindcss.com/docs/font-size"
-                target="_blank"
-                className="text-blue-500 underline hover:text-blue-300 hover:no-underline"
-              >
-                https://tailwindcss.com/docs/font-size
-              </Link>
+              <TextLink href="https://tailwindcss.com/docs/font-size" />
             </dd>
             <dd>
               <ul>
@@ -142,13 +139,7 @@ export default function Home() {
                 <li className="text-orange-300">text-orange-300</li>
                 <li className="text-blue-300">text-blue-300</li>
               </ul>
-              <Link
-                href="https://tailwindcss.com/docs/customizing-colors"
-                target="_blank"
-                className="text-blue-500 underline hover:text-blue-300 hover:no-underline"
-              >
-                https://tailwindcss.com/docs/customizing-colors
-              </Link>
+              <TextLink href="https://tailwindcss.com/docs/customizing-colors" />
             </dd>
             <dt className="text-lg mt-4 font-bold">背景色</dt>
             <dd className="bg-gray-100">bg-[色名]-[濃さ]</dd>
@@ -161,13 +152,7 @@ export default function Home() {
                 <li className="bg-orange-300">bg-orange-300</li>
                 <li className="bg-blue-300">bg-blue-300</li>
               </ul>
-              <Link
-                href="https://tailwindcss.com/docs/customizing-colors"
-                target="_blank"
-                className="text-blue-500 underline hover:text-blue-300 hover:no-underline"
-              >
-                https://tailwindcss.com/docs/customizing-colors
-              </Link>
+              <TextLink href="https://tailwindcss.com/docs/customizing-colors" />
             </dd>
             <dt className="text-lg mt-4 font-bold">display</dt>
             <dd className="bg-gray-100">block,inline,inline-block,flex,grid</dd>
@@ -182,13 +167,7 @@ export default function Home() {
             </dd>
             <dt className="text-lg mt-4 font-bold">animation,animate</dt>
             <dd>
-              <Link
-                href="https://tailwindcss.com/docs/animation"
-                target="_blank"
-                className="text-blue-500 underline hover:text-blue-300 hover:no-underline"
-              >
-                https://tailwindcss.com/docs/animation
-              </Link>
+              <TextLink href="https://tailwindcss.com/docs/animation" />
             </dd>
             <dd>
               <div className="relative w-4 h-4 p-8">
@@ -204,7 +183,7 @@ export default function Home() {
               <Link
                 href={`https://www.google.com/`}
                 target="_blank"
-                className="undefined
+                className="
                 bg-orange-300 font-bold  shadow
                 text-xl px-6 py-3 tracking-wider
                 rounded-md text-white inline-block
